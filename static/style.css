@@ -1,0 +1,271 @@
+body{
+    background-color: #b0dff154;
+    padding: 0px;
+    margin: 0px;
+}
+/* .row{
+    padding-left: 500px;
+} */
+#home-page{
+    background-color: #D4F6CC;
+    top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    height: 25vh;
+    width: 30vw;
+}
+#login_home_page{
+    background-color: #81CACF;
+    top: 20vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    height: 55vh;
+    width: 25vw;
+}
+#register_home_page{
+    background-color: #81CACF;
+    top: 20vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 8px;
+    height: 60vh;
+    width: 25vw;
+ 
+
+
+}
+
+#header{
+    background-color: #D4F6CC;
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    margin-right: 100px;
+  
+
+ }
+
+ #Logout_link{
+    
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+#Logout_link:hover{
+  background-color: #D4F6CC;
+  color: rgb(247, 247, 247);
+}
+#left_sidebar{
+    margin-top: 10px;
+
+    display: inline-block;
+    
+}
+#left_sidebar table tr{
+    background-color: #0096FF;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+#left_sidebar table tr:hover{
+    background-color: #D4F6CC;
+    color: black;
+}
+#link{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+
+}
+#link:hover{
+    color: black;
+ 
+}
+.link{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+
+}
+.link:hover{
+    color: rgb(248, 232, 232);
+ 
+}
+
+#right_sidebar{
+    padding: 35px;
+    width: 75vw;
+    height: 75vh;
+    display: inline-block;
+    color: black;
+}
+
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: rgb(248, 232, 232);;
+    background-color: #0096FF;
+    text-decoration: none;
+}
+
+/* start coding of update task */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+} */
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* form {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+input, textarea, select {
+    /* width: 100%; */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* update password */
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.flash {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.flash.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.flash.danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+
+
+/* add user code */
+
+container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+/* body { font-family: Arial, sans-serif; text-align: center; } */
+.container { margin-top: 50px; }
+.box { width: 250px; padding: 20px; margin: 10px; background: #f4f4f4; border-radius: 10px; }
+    

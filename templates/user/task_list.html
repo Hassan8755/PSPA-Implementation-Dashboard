@@ -1,0 +1,41 @@
+{%extends 'user/base.html' %}
+
+{% block content %}
+    <center><h3><b>Your Task</b></h3></center>
+    <table class="table" style="background-color: whitesmoke; width: 75vw;">
+        <tr>
+            <th>S.No</th>
+            <th>Task ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Start Date</th>
+             <th>End Date</th>
+             <th>Status</th>
+             <th>Action</th>
+        </tr>
+
+        {%for task in task%}
+        <tr class="bg-{{ 'success' if task[5] == 'completed' else 'danger' if task[5] == 'pending' else 'warning' }}">
+            <td>{{loop.index}}</td>
+            <td>{{task[0]}}</td>
+            <td>{{task[1]}}</td>
+            <td>{{task[2]}}</td>
+            <td>{{task[3]}}</td>
+            <td>{{task[4]}}</td>
+            <td>{{task[5]}}</td>
+            <td>
+            {% if task[5] == 'pending' %}
+                 <a href="{{ url_for('update_task', id=task[0],status='ongoing') }}" class="btn btn-success">Start Work</a>
+            {% elif task[5] == 'ongoing' %}
+                 <a href="{{ url_for('update_task', id=task[0],status='completed') }}" class="btn btn-success">Complete it</a>
+            {% else %}
+                <span class="badge bg-secondary">Completed</span>
+            {% endif %}
+        </td>
+        </tr>
+    {% endfor %}
+
+    </table>
+
+    {% endblock %}
+    

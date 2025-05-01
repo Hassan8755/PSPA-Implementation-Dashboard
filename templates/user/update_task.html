@@ -1,0 +1,41 @@
+
+{%extends 'user/base.html' %}
+
+{% block content %}
+    <div class="row" id="header">
+        <div class="col-md-12">
+            <h3><i class="fa fa-solid fa-list" style="padding-right: 15px;"></i>
+                Task Management System</h3>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 m-auto" style="color: white;"> <br>
+            <h3 style="color: white;"update_task> </h3>
+
+            <form action="" method="post">
+                <div class="form-group">
+                    <input type="hidden" name="id" class="form-control" value="" required>
+
+                </div>
+                <div class="from-group">
+                    <select class="form-control" name="status">
+                        <option value="">-select-</option>
+                        <option value="">In-progress</option>
+                        <option value="">complete</option>
+
+                    </select>
+                    
+                </div>
+                <input type="submit" class="btn btn-warning" name="edit_task" value="Update">
+                
+
+                
+
+            </form>
+
+        </div>
+
+    </div>
+    {% endblock %}

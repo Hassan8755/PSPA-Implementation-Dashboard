@@ -1,0 +1,40 @@
+
+    {%extends 'admin/base.html' %}
+    {% block content %}
+    <center><h3>All the leave applications</h3></center>
+    <table class="table" style="background-color: whitesmoke; width: 75vw;">
+        <tr>
+            <th>S.No</th>
+            <th>Id</th>
+            <th>Subject</th>
+            <th>Message</th>
+             <th>User</th>
+             <th>Leave_date</th>
+             <th>Action</th>
+        </tr>
+
+
+        {%for user in leaves%}
+    <tr class="bg-{{ 'success' if user[5] == 'Accepted' else 'danger' if user[5] == 'Rejected' else 'warning' }}">
+        <td>1</td>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[6]}}</td>
+        <td>{{user[4]}}</td>
+        
+        <!-- <td><a href="" style="color: crimson;">Accept</a>  | <a href="" >Reject</a></td> -->
+        <td>
+            {% if user[5] == 'pending' or user[5] == '' %}
+                 <a href="{{ url_for('update_leave', id=user[0],status='Accepted') }}" class="btn btn-success">Accept</a>
+                 <a href="{{ url_for('update_leave', id=user[0],status='Rejected') }}" class="btn btn-success">Reject</a>
+            {% else %}
+                 <span class="badge bg-secondary">{{user[5]}}</span>
+            {% endif %}
+
+        </td>
+    </tr>
+{% endfor %}
+
+    </table>
+{% endblock %}

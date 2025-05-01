@@ -1,0 +1,17 @@
+{%extends 'admin/base.html' %}
+
+{% block content %}
+   
+<div class="container">
+    <h2>Edit User</h2>
+    <form method="POST">
+        <input type="hidden" name="id" placeholder="Enter Name" required value='{{user_data[0]}}'>
+        <input type="text" name="name" placeholder="Enter Name" required value='{{user_data[1]}}'>
+        <input type="email" name="email" placeholder="Enter Email" required value='{{user_data[2]}}'>
+        <input type="mobile" name="mobile" placeholder="Enter Mobile" required value='{{user_data[4]}}'>
+        <button type="submit">Update</button>
+    </form>
+
+</div>
+    
+    {% endblock %}
