@@ -198,31 +198,6 @@ def get_tasks():
 
      # task list code end
 
-# update password code start
-# @app.route('/update_password', methods=['GET', 'POST'])
-# def update_password():
-#     if request.method == 'POST':
-#         current_password = request.form.get('current_password')
-#         new_password = request.form.get('new_password')
-
-#         user_id = session.get("user")[0]
-
-#         if admin in session:
-#             user_id = session.get("admin")[0]
-
-
-        
-
-#         flash("Password updated successfully!", "success")
-#         return redirect(url_for('update_password'))
-
-#     return render_template('/update_password.html')
-
-    # update password code end
-
-
-
-
 
 @app.route('/user_logout')
 def user_logout():
